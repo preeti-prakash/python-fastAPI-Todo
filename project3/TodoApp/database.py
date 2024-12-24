@@ -8,9 +8,9 @@ from sqlalchemy.ext.declarative import declarative_base
 load_dotenv()
 
 # Extract password from environment variables
-password = os.getenv('AIVEN_DB_PASSWORD')
+AIVEN_DB_PASSWORD = os.getenv('AIVEN_DB_PASSWORD')
 
-SQLALCHEMY_DATABASE_URL=f'postgresql+psycopg2://avnadmin:{password}@pg-todoapp-fastapi-todoapplication.c.aivencloud.com:19044/defaultdb?sslmode=require'
+SQLALCHEMY_DATABASE_URL=f'postgresql+psycopg2://avnadmin:{AIVEN_DB_PASSWORD}@pg-todoapp-fastapi-todoapplication.c.aivencloud.com:19044/defaultdb?sslmode=require'
 
 
 
