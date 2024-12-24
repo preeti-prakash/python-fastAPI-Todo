@@ -14,7 +14,7 @@ print(password)
 # SQLALCHEMY_DATABASE_URL = 'sqlite:///./todosapp.db'
 # SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:test1234!@localhost:5432/TodoApplicationDatabase'
 # SQLALCHEMY_DATABASE_URL = 'postgresql://test:2CEPauv6iSHuxzcJemMWtyoIohx0zHWn@dpg-ctktce1opnds7382c1h0-a:5432/fastapidatabase_trla'
-SQLALCHEMY_DATABASE_URL =  f'postgres://avnadmin:{password}@pg-todoapp-fastapi-todoapplication.c.aivencloud.com:19044/defaultdb?sslmode=require'
+SQLALCHEMY_DATABASE_URL =  f'postgres+psycopg2://avnadmin:{password}@pg-todoapp-fastapi-todoapplication.c.aivencloud.com:19044/defaultdb?sslmode=require'
 
 
 
