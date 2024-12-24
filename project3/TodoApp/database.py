@@ -8,6 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 load_dotenv()
 # Extract password from environment variables
 password = os.getenv('AIVEN_DB_PASSWORD')
+print(password)
 
 
 # SQLALCHEMY_DATABASE_URL = 'sqlite:///./todosapp.db'
