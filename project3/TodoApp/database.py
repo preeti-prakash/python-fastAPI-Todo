@@ -10,7 +10,7 @@ load_dotenv()
 # Extract password from environment variables
 password = os.getenv('AIVEN_DB_PASSWORD')
 
-SQLALCHEMY_DATABASE_URL =  f'postgres+psycopg2://avnadmin:{password}@pg-todoapp-fastapi-todoapplication.c.aivencloud.com:19044/defaultdb?sslmode=require'
+SQLALCHEMY_DATABASE_URL =  f'postgresql+psycopg2://avnadmin:{password}@pg-todoapp-fastapi-todoapplication.c.aivencloud.com:19044/defaultdb?sslmode=require'
 
 
 # SQLALCHEMY_DATABASE_URL = 'sqlite:///./todosapp.db'
